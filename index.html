@@ -1,0 +1,269 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocky project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Fixed "Buy Now" Button -->
+    <button class="buy-now-btn">Buy Now</button>
+    
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="social-media">
+          <a class="fa" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a class="tw" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a class="in" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a class="tk" href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+          <a class="tl" href="https://www.telegram.com" target="_blank"><i class="fab fa-telegram"></i></a>
+          <a class="gi" href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
+          <a class="pi" href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>  
+    </header>
+  <main>
+    <style>
+        /* body {
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: #f0f0f0;
+          overflow: hidden;
+        } */
+        .intro {
+          position: relative;
+          width: 300px;
+        }
+        /* .eye {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          background: white;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+        }
+        .eye .pupil {
+          width: 20px;
+          height: 20px;
+          background: black;
+          border-radius: 50%;
+          position: relative;
+        }
+        .eye.left {
+          top: 70px;
+          left: 90px;
+        }
+        .eye.right {
+          top: 69px;
+          left: 160px;
+        } */
+      </style>
+    </head>
+    <body>
+      <div class="intro">
+        <img src="images/theeyepic.png" alt="Rock" style="width: 100%;">
+        <div class="eye left">
+          <div class="pupil"></div>
+        </div>
+        <div class="eye right">
+          <div class="pupil"></div>
+        </div>
+      </div>
+      <script>
+        const eyes = document.querySelectorAll('.eye');
+        const pupils = document.querySelectorAll('.pupil');
+    
+        document.addEventListener('mousemove', (event) => {
+          const { clientX, clientY } = event;
+    
+          eyes.forEach((eye) => {
+            const rect = eye.getBoundingClientRect();
+            const eyeCenterX = rect.left + rect.width / 2;
+            const eyeCenterY = rect.top + rect.height / 2;
+    
+            const angle = Math.atan2(clientY - eyeCenterY, clientX - eyeCenterX);
+    
+            const maxPupilMove = 10; // Adjust this for how far the pupils can move
+            const pupil = eye.querySelector('.pupil');
+            pupil.style.transform = `translate(${Math.cos(angle) * maxPupilMove}px, ${Math.sin(angle) * maxPupilMove}px)`;
+          });
+        });
+      </script>
+      <section class="intro">
+          <!-- <img src="R4ED.png" alt="Rocky the Rock"> -->
+          <h1>ROCKY</h1>
+          <p>The Cutest Rock in the World</p>
+      </section>
+      <section>
+        <div class="marquee">
+            <div class="marquee-text">
+                <span>Welcome to the Gaming Universe!</span>
+                <span>Play and Conquer!</span>
+                <span>Level Up Your Skills!</span>
+                <span>Get Ready for Epic Battles!</span>
+            </div>
+        </div>
+      </section>
+      <section class="info">
+          <!-- Book Container -->
+
+    <div class="book">
+      <!-- Left Page -->
+      <div class="page left-page">
+          <h2>The care and training of your</h2>
+          <h1>Pet Rock</h1>
+          <img src="images/frontpage.png" alt="Pet Rock" class="pet-rock-img">
+      </div>
+
+      <!-- Right Page -->
+      <div class="page right-page">
+          <h3>ITEM 1</h3>
+          <p>
+              Your new rock is a very sensitive pet and may be slightly traumatized from all the handling 
+              and shipping required in bringing the two of you together. While you may look in on your 
+              new pet from time to time. 
+          </p>
+      </div>
+  </div>
+
+  <!-- JavaScript for page flip -->
+  <script src="script.js"></script>
+  </section>
+  
+  <script src="script.js"></script>
+      <section class="how-to-buy">
+          <h2>How to Buy</h2>
+          <div class="steps">
+              <div class="step">
+                  <!-- <h3>Step 1</h3>
+                  <p>Load up your wallet</p> -->
+                  <img class="img" src="Screenshot 2024-11-21 at 12-42-53 Rocky.png" alt="">
+              </div>
+              <div class="step">
+                  <!-- <h3>Step 2</h3>
+                  <p>Swap for Rocky</p> -->
+                  <img class="img" src="images/step2.png" alt="">
+              </div>
+              <div class="step">
+                <!-- <h3>Step 1</h3>
+                <p>Load up your wallet</p> -->
+                <img class="img" src="images/step3.png" alt="">
+            </div>
+            <div class="step">
+                <!-- <h3>Step 2</h3>
+                <p>Swap for Rocky</p> -->
+                <img class="img" src="images/step4.png" alt="">
+            </div>
+          </div>
+      </section>
+      <section class="partners-exchanges">
+        <div class="section-header">
+            <h2>Partnerships</h2>
+        </div>
+        <div class="partners-grid">
+            <div class="partner">
+                <img src="images/PARTNER1.png" alt="Bonkbot">
+                <div class="hidden-options">
+                    <p>Visit Bonkbot</p>
+                    <a href="https://bonkbot.com" target="_blank">Learn More</a>
+                </div>
+            </div>
+            <div class="partner">
+                <img src="images/PARTNER2.png" alt="BullX">
+                <div class="hidden-options">
+                    <p>Discover BullX</p>
+                    <a href="https://bullx.com" target="_blank">Learn More</a>
+                </div>
+            </div>
+            <div class="partner">
+                <img src="images/PARTNER3.png" alt="Jupiter">
+                <div class="hidden-options">
+                    <p>Explore Jupiter</p>
+                    <a href="https://jupiter.com" target="_blank">Learn More</a>
+                </div>
+            </div>
+            <div class="partner">
+                <img src="" alt="Raydium">
+                <div class="hidden-options">
+                    <p>Explore Raydium</p>
+                    <a href="https://raydium.com" target="_blank">Learn More</a>
+                </div>
+            </div>
+            <div class="partner">
+                <img src="images/PARTNERR4.png" alt="DiamondSwap">
+                <div class="hidden-options">
+                    <p>Visit DiamondSwap</p>
+                    <a href="https://diamondswap.com" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="section-header">
+            <h2>Exchanges</h2>
+        </div>
+        <div class="exchanges-grid">
+            <div class="exchange">
+                <img src="images/EXCHANGE1.png" alt="BitMart">
+                <div class="hidden-options">
+                    <p>Trade on BitMart</p>
+                    <a href="https://bitmart.com" target="_blank">Visit Now</a>
+                </div>
+            </div>
+            <div class="exchange">
+                <img src="images/EXCHANGE2.png" alt="LBank">
+                <div class="hidden-options">
+                    <p>Explore LBank</p>
+                    <a href="https://lbank.com" target="_blank">Visit Now</a>
+                </div>
+            </div>
+            <div class="exchange">
+                <img src="images/EXCHANGE3.png" alt="AscendEX">
+                <div class="hidden-options">
+                    <p>Visit AscendEX</p>
+                    <a href="https://ascendex.com" target="_blank">Visit Now</a>
+                </div>
+            </div>
+            <div class="exchange">
+                <img src="images/EXCHANGE4.png" alt="CoinEx">
+                <div class="hidden-options">
+                    <p>Explore CoinEx</p>
+                    <a href="https://coinex.com" target="_blank">Visit Now</a>
+                </div>
+            </div>
+            <div class="exchange">
+                <img src="images/EXCHANGE5.png" alt="Gate.io">
+                <div class="hidden-options">
+                    <p>Trade on Gate.io</p>
+                    <a href="https://gate.io" target="_blank">Visit Now</a>
+                </div>
+            </div>
+        </div>
+    </section>    
+  </main>
+  <footer>
+      <p>© 2024 Rocky. All Rights Reserved.</p>
+  </footer>  
+  <!-- JavaScript for page flip -->
+  <script>
+    // Function to flip the page
+    function flipPage() {
+        const book = document.querySelector('.book');
+        // Toggle the class that triggers the page flip effect
+        book.classList.toggle('flipped');
+    }
+</script>
+</body>
+</html>
